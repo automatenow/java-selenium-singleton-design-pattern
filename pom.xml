@@ -9,14 +9,15 @@
     <version>1.0-SNAPSHOT</version>
     <url>https://www.automateNow.io</url>
     <description>
-        This is a small demo project that shows how to use Singleton to manage the driver in a Selenium test framework.
+        This is a small demo project that shows how to use the Singleton design pattern to manage the driver in a
+        Java Selenium WebDriver test framework.
 
         Please refer to the following link to learn more about the Singleton design pattern.
         https://www.youtube.com/watch?v=C_LPMGSX2rU
     </description>
 
     <scm>
-        <url>https://github.com/automatenow/singleton-design-pattern</url>
+        <url>https://github.com/automatenow/java-selenium-singleton-design-pattern</url>
     </scm>
 
     <licenses>
@@ -29,7 +30,9 @@
     <developers>
         <developer>
             <name>Marco A. Cruz</name>
-            <url>https://linktr.ee/automateNow</url>
+            <email>info@automateNow.io</email>
+            <organization>automateNow LLC</organization>
+            <organizationUrl>https://automateNow.io</organizationUrl>
             <roles>
                 <role>Owner</role>
             </roles>
@@ -45,18 +48,13 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.5.0</version>
+            <version>4.28.1</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.6.1</version>
+            <version>7.10.2</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.0</version>
         </dependency>
     </dependencies>
 

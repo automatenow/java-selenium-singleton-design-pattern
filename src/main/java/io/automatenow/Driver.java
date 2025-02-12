@@ -1,6 +1,5 @@
 package io.automatenow;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Driver {
 
     // ThreadLocal used to manage the driver
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     // Private constructor to prevent the creation of new instances of Driver
     private Driver(){}
@@ -18,7 +17,6 @@ public class Driver {
     // Public method to access the driver instance (uses lazy instantiation)
     public static WebDriver getInstance() {
         if (driver.get() == null) {
-            WebDriverManager.chromedriver().setup();
             driver.set(new ChromeDriver());
         }
         return driver.get();
