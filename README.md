@@ -45,8 +45,9 @@ git clone https://github.com/automatenow/java-singleton-design-pattern.git
 cd java-singleton-design-pattern
 ```
 
-2. Build the Proeject
+2. Build the Project<br/>
 ```mvn clean install```
+
 3. Use your favorite IDE to run the tests.
 
 ## License
